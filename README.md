@@ -1,10 +1,22 @@
 # CleanTaskMan
 
-CleanTaskMan is a lightweight native task manager for Windows 11. It keeps the clean look and familiar workflow of Windows Task Manager, from the process list to the Performance graphs. You can open it and go straight to the information you need.
+**The quick feel of Windows 10 Task Manager, with the look and features we like in Windows 11.**
 
-We built it in C++ with Win32, Direct2D, and DirectWrite to draw directly with Windows APIs. The interface appears before background hardware collection starts. The app keeps its device column steady during resize and pauses collection while minimized. The goal is to preserve the feel of Windows 11 Task Manager and make common interactions feel immediate.
+We liked what Windows 11 did with Task Manager’s design. But when a program froze and we needed to find out what was going on, Task Manager itself could feel sluggish to open, resize, or use. That’s what made us build CleanTaskMan. We wanted the familiar layout and modern performance views to feel quick again.
 
-![CleanTaskMan Performance view showing GPU engine and memory graphs](docs/images/performance.png)
+We built CleanTaskMan in C++ using Win32 and Direct2D, drawing the interface directly. The window appears before hardware monitoring starts, so you can see the app while it begins collecting data.
+
+## Ready when you press Ctrl+Shift+Esc
+
+Turn on **Minimize to tray when closing** and **Replace Task Manager** in Settings. When you close the window, CleanTaskMan stays in the system tray and pauses monitoring. Press **Ctrl+Shift+Esc** to bring the existing window back and resume live readings. Enabling **Replace Task Manager** requires administrator permission.
+
+## Dark and light themes
+
+Choose **Dark**, **Light**, or **Use system setting** under **App theme**.
+
+| Dark theme | Light theme |
+| --- | --- |
+| [![CleanTaskMan CPU Performance view in dark theme](docs/images/performance-dark.png)](docs/images/performance-dark.png) | [![CleanTaskMan CPU Performance view in light theme](docs/images/performance-light.png)](docs/images/performance-light.png) |
 
 ## Download
 
