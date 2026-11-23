@@ -1,0 +1,7 @@
+build/
+.cache/
+.tools/
+artifacts/
+CleanTaskMan.ini
+CleanTaskMan.window.ini
+*.user
